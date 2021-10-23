@@ -1,0 +1,8 @@
+/* waybar color.css imported into style.css */
+
+@define-color bgcolor #3ce6f6;	/* cyan */
+@define-color fgcolor #000000;	/* black */
+@define-color hover #2d2d2d; 		/* dark grey */
+@define-color charging #64f89d;	/* green */
+@define-color critical #eb64cb;	/* purple */
+

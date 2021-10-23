@@ -1,0 +1,106 @@
+/* waybar style.css */
+
+@import 'colors.css';
+
+* {
+	border: none;
+	border-radius: 0;
+	font-family: "JetBrains Mono";
+	font-size: 16px;
+}
+
+window#waybar {
+	background: transparent;
+}
+
+#workspaces button {
+	font-weight: bold;
+	font-size: 16px;
+	color: @bgcolor;
+}
+
+#workspaces button.visible {
+	color: @bgcolor;
+}
+
+#workspaces button.focused {
+	background: @bgcolor;
+	color: @fgcolor;
+}
+
+#workspaces button:hover {
+	background: @hover;
+	box-shadow: inherit;
+}
+
+#workspaces button.focused:hover {
+	background: @bgcolor;
+	box-shadow: inherit;
+}
+
+#custom-cap-left, #custom-cap-right {
+	font-size: 28px;
+	color: @bgcolor;
+}
+
+#idle_inhibitor,
+#cpu, 
+#temperature, 
+#memory, 
+#pulseaudio, 
+#disk,
+#battery, 
+#clock, 
+#custom-offswitch,
+#network {
+	background: @bgcolor;
+	color: @fgcolor;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#disk.critical {
+	background-color: @critical;
+}
+#temperature.critical {                                                           
+	background-color: @critical;                                                    
+}
+#cpu.critical {                                                           
+	background-color: @critical;                                                    
+}
+#memory.critical {                                                           
+	background-color: @critical;                                                    
+}
+
+@keyframes blink1 {                                                                
+		to {
+			background-color: @charging;
+			color: @fgcolor;
+		}
+}
+
+#battery.charging {
+  color: @fgcolor;
+  background-color: @bgcolor;
+	animation-name: blink1;                                                          
+	animation-duration: 0.5s;                                                       
+	animation-timing-function: linear;                                              
+	animation-iteration-count: infinite;                                            
+	animation-direction: alternate;
+}
+
+@keyframes blink2 {
+    to {
+        background-color: @critical;
+        color: @fgcolor;
+    }
+}
+#battery.critical:not(.charging) {
+  color: @fgcolor;
+  background-color: @bgcolor;
+  animation-name: blink2;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
