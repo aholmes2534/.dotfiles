@@ -1,4 +1,4 @@
-"  ~/.vimrc 050921
+"  ~/.vimrc 241021
 "
 "  to pause Vim and drop to terminal ^C + Z, then fg to return to Vim
 
