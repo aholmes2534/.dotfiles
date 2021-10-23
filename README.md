@@ -1,4 +1,4 @@
-# Archlinux + Sway .dotfiles
+# .dotfiles
 
 This is my repository for configuration files required for Archlinux, Bash, Vim, Sway window manager,
 Waybar, Swaylock, Wofi and various other applications. 
