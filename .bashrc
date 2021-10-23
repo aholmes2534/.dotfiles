@@ -1,4 +1,4 @@
-# ~/.bashrc 091121
+# ~/.bashrc 241021
 # prompt set system wide in /etc/bash.bashrc
 
 # If not running interactively, don't do anything
