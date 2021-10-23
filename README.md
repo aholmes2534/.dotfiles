@@ -5,7 +5,7 @@ Waybar, Swaylock, Wofi and various other applications.
 
 ## Archlinux
 
-The Arch Linux distrobution is the foundation of my system. The installation guide 
+The Arch Linux distribution is the foundation the system. The installation guide 
 for my system will be here as well. This is a Thinkpad t470 uefi, systemd-boot with 
 full disk encryption. LVM for the partitioning with seperate root, home, var, data 
 and swap partitions on a 1T ssd.
