@@ -6,7 +6,7 @@ color=28292f
 fade-in=0.2
 
 clock
-datestr=%e.%m.%Y
+datestr=%e.%m.%y
 timestr=%l:%M
 
 indicator-radius=120
