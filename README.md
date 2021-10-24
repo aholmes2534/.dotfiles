@@ -12,7 +12,7 @@ and swap partitions on a 1T ssd.
 
 ## Screenshots
 
-Changing destop theme is easy just define wallpaper image in sway/conf file then change the background color in the waybar/color.css file
+Changing the desktop theme is easy just define wallpaper image in sway/conf file then change the background color in the waybar/color.css file
 to your desired matching color.
 
 ![sample desktop](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-10-23_09-00-31_998931833.png)
