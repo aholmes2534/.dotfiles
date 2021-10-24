@@ -10,7 +10,7 @@ for my system will be here as well. This is a Thinkpad t470 uefi, systemd-boot w
 full disk encryption. LVM for the partitioning with seperate root, home, var, data 
 and swap partitions on a 1T ssd.
 
-## Installing
+## 
 
-### Swaywm
-### Waybar
+### 
+### 
