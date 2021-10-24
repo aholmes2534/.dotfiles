@@ -1,6 +1,6 @@
 # .dotfiles
 
-This is my repository for configuration files required for Archlinux, Bash, Vim, Sway window manager,
+This is my repository for configuration files required for Archlinux, Bash, Vim, Sway WM,
 Waybar, Swaylock, Wofi and various other applications. 
 
 ## Archlinux
