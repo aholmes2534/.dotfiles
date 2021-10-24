@@ -14,7 +14,7 @@ set $menu wofi
 set $browser MOZ_ENABLE_WAYLAND=1 firefox
 set $bar waybar
 set $opacity 0.85
-set $background ~/Pictures/Backgrounds/abstract-blue.jpg
+set $background ~/Pictures/CurrentBG/lights1k1.jpg
 
 output eDP-1 bg $background fill dpms on
 
