@@ -1,5 +1,6 @@
 #------------------------------------------------------------------------------
-# .conf/sway/config
+#
+#----------.conf/sway/config
 #
 #-------------------- Variables
 
@@ -10,11 +11,10 @@ set $up k
 set $right l
 set $term foot
 set $menu wofi
-#set $menu rofi -show run | xargs swaymsg exec --
 set $browser MOZ_ENABLE_WAYLAND=1 firefox
 set $bar waybar
 set $opacity 0.85
-set $background ~/Pictures/CurrentBG/JYfhTSb.jpg
+set $background ~/Pictures/Backgrounds/abstract-blue.jpg
 
 output eDP-1 bg $background fill dpms on
 
