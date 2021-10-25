@@ -1,6 +1,6 @@
 /* waybar color.css imported into style.css */
 
-@define-color bgcolor #c5fbc1;	/* pale green */
+@define-color bgcolor #8bfb58;	/* pale green */
 @define-color fgcolor #000000;	/* black */
 @define-color hover #2d2d2d; 		/* dark grey */
 @define-color charging #64f89d;	/* green */
