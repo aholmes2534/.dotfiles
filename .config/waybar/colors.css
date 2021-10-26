@@ -3,6 +3,6 @@
 @define-color bgcolor #61e8a0;	/* pale green */
 @define-color fgcolor #000000;	/* black */
 @define-color hover #2d2d2d; 		/* dark grey */
-@define-color charging #64f89d;	/* green */
+@define-color charging #b483f8;	/* green */
 @define-color critical #eb64cb;	/* purple */
 

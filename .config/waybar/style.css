@@ -83,7 +83,7 @@ window#waybar {
   color: @fgcolor;
   background-color: @bgcolor;
 	animation-name: blink1;                                                          
-	animation-duration: 0.5s;                                                       
+	animation-duration: 1.0s;                                                       
 	animation-timing-function: linear;                                              
 	animation-iteration-count: infinite;                                            
 	animation-direction: alternate;
@@ -99,7 +99,7 @@ window#waybar {
   color: @fgcolor;
   background-color: @bgcolor;
   animation-name: blink2;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
