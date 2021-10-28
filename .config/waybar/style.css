@@ -73,20 +73,20 @@ window#waybar {
 }
 
 @keyframes blink1 {                                                                
-		to {
-			background-color: @charging;
-			color: @fgcolor;
-		}
+	to {
+		background-color: @charging;
+		color: @fgcolor;
+	}
 }
 
 #battery.charging {
   color: @fgcolor;
   background-color: @bgcolor;
-	animation-name: blink1;                                                          
-	animation-duration: 1.0s;                                                       
-	animation-timing-function: ease-in-out;                                              
-	animation-iteration-count: infinite;                                            
-	animation-direction: alternate;
+		animation-name: blink1;                                                          
+		animation-duration: 1.0s;                                                       
+		animation-timing-function: linear;                                              
+		animation-iteration-count: infinite;                                            
+		animation-direction: alternate;
 }
 
 @keyframes blink2 {
@@ -97,10 +97,10 @@ window#waybar {
 }
 #battery.critical:not(.charging) {
   color: @fgcolor;
-  background-color: @bgcolor;
-  animation-name: blink2;
-  animation-duration: 0.3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  	background-color: @bgcolor;
+  	animation-name: blink2;
+  	animation-duration: 0.3s;
+  	animation-timing-function: linear;
+  	animation-iteration-count: infinite;
+  	animation-direction: alternate;
 }
