@@ -6,7 +6,7 @@
 	border: none;
 	border-radius: 0;
 	font-family: "JetBrains Mono";
-	font-size: 16px;
+	font-size: large;
 }
 
 window#waybar {
@@ -14,8 +14,8 @@ window#waybar {
 }
 
 #workspaces button {
-	font-weight: bold;
-	font-size: 16px;
+	font-weight: bolder;
+	font-size: large;
 	color: @bgcolor;
 }
 
@@ -84,7 +84,7 @@ window#waybar {
   background-color: @bgcolor;
 	animation-name: blink1;                                                          
 	animation-duration: 1.0s;                                                       
-	animation-timing-function: linear;                                              
+	animation-timing-function: ease-in-out;                                              
 	animation-iteration-count: infinite;                                            
 	animation-direction: alternate;
 }
