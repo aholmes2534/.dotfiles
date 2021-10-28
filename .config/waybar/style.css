@@ -90,11 +90,12 @@ window#waybar {
 }
 
 @keyframes blink2 {
-    to {
-        background-color: @critical;
-        color: @fgcolor;
-    }
+	to {
+		background-color: @critical;
+		color: @fgcolor;
+	}
 }
+
 #battery.critical:not(.charging) {
   color: @fgcolor;
   	background-color: @bgcolor;
