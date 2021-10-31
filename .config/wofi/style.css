@@ -5,6 +5,7 @@ window {
 	background-color: #24283b;
 	font-family: JetBrainsMono;
 	font-size: 12px;
+	opacity: 0.9;
 }
 
 #input {
