@@ -69,12 +69,12 @@
 },
 "cpu": {
   "interval": 3,
+  "min-length": 6,
 	"format": " {usage}%",
   "tooltip": false,
   "states": {
   "critical": 90,
   },
-  "min-length": 6,
 },
 "temperature": {
   "tooltip": false,
@@ -110,10 +110,10 @@
 },
 "custom/cap-left": {
   "tooltip": false,
-	"format": "",
+	"format": "",
 },
 "custom/cap-right": {
   "tooltip": false,
-	"format": "",
+	"format": "",
 },
 }
