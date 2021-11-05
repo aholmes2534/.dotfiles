@@ -60,28 +60,28 @@ window#waybar {
 }
 
 #disk.critical {
-	background-color: @critical;
+		color: @critical;
 }
 
 #temperature.critical {                                                           
-	background-color: @critical;                                                    
+		color: @critical;                                                    
 }
 
 #cpu.critical {                                                           
-	background-color: @critical;                                                    
+		color: @critical;                                                    
 }
 
 #memory.critical {                                                           
-	background-color: @critical;                                                    
+		color: @critical;                                                    
 }
 
 #battery.critical {
-		background-color: @critical;
+		color: @critical;
 }
 
 @keyframes blink1 {                                                                
 	to {
-		background-color: @charging;
+/*		background-color: @charging; */
 		color: @fgcolor;
 	}
 }
@@ -98,8 +98,8 @@ window#waybar {
 
 @keyframes blink2 {
 	to {
-		background-color: @critical;
-		color: @fgcolor;
+/*	background-color: @critical; */
+		color: @critical;
 	}
 }
 
