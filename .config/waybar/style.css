@@ -82,7 +82,7 @@ window#waybar {
 @keyframes blink1 {                                                                
 	to {
 /*		background-color: @charging; */
-		color: @fgcolor;
+		color: @charging;
 	}
 }
 
