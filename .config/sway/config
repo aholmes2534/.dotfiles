@@ -1,6 +1,7 @@
 #------------------------------------------------------------------------------
 #
-#----------- conf/sway/config
+#-----------> ~/.config/sway/config 
+#-----------> date 071121
 #
 #-------------------- Variables
 
@@ -73,8 +74,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exit 
 # take screenshot, pick color and save to clipborad
 bindsym $mod+Shift+p exec grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4 | wl-copy
-# exit sway (logs you out of your X session)
-#bindsym $mod+Shift+e exec swaynag -t warning -m 'Mod4 + Shift + e pressed, do you want to end session?.' -b 'Suspend' 'systemctl suspend' -b 'Shutdown' 'systemctl -i poweroff' -b 'Reboot' 'systemctl -i reboot' -b 'Yes, exit sway' 'swaymsg exit' --background=#3ce6f6 --button-background=#3ce6f6 --button-border-size=2px --border=#000000 --text=#000000 --font=JetBrains Mono 18
 
 #-------------------- Split container
 
