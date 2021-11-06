@@ -4,5 +4,5 @@
 @define-color fgcolor #000000;	/* black */
 @define-color hover #2d2d2d; 		/* dark grey */
 @define-color charging #7891ff;	/* green */
-@define-color critical #eb64cb;	/* purple */
-
+@define-color critical #ff0000;	/* red */
+@define-color warning #fa8f0c;  /* orange */
