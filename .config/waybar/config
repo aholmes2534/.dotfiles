@@ -1,4 +1,5 @@
 // waybar config
+// 061121
 
 {
 "layer": "top",
@@ -12,13 +13,13 @@
   "min-length": 6,
   "states": {
   "full": 95,
-  "warning": 30,
-  "critical": 20,
+  "warning": 20,
+  "critical": 10,
   },
   "tooltip": false,
   "full-at": 90,
   "format-plugged": " {capacity}%",
-  "format-charging": " {capacity}%",
+  "format-charging": "{icon} {capacity}%",
   "format": "{icon} {capacity}%",
   "format-icons": ["", "", "", "", ""],
   "format-time": "{H}h:{M}m",
@@ -79,7 +80,7 @@
 "temperature": {
   "tooltip": false,
   "min-length": 6,
-  "critical-threshold": 80,
+  "critical-threshold": 90,
 	"format": "{icon} {temperatureC}°C",
 	"format-critical": "{icon} {temperatureC}°C",
   "format-icons": {
