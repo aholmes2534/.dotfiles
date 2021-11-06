@@ -75,13 +75,17 @@ window#waybar {
 		color: @critical;                                                    
 }
 
+/*#battery.warning {
+		color: @warning;
+}*/
+
 #battery.critical {
 		color: @critical;
 }
 
 @keyframes blink1 {                                                                
 	to {
-/*		background-color: @charging; */
+/*	background-color: @charging; */
 		color: @charging;
 	}
 }
@@ -99,6 +103,23 @@ window#waybar {
 @keyframes blink2 {
 	to {
 /*	background-color: @critical; */
+		color: @warning;
+	}
+}
+
+#battery.warning:not(.charging) {
+  color: @fgcolor;
+  background-color: @bgcolor;
+  	animation-name: blink2;
+  	animation-duration: 0.6s;
+  	animation-timing-function: linear;
+  	animation-iteration-count: infinite;
+  	animation-direction: alternate;
+}
+
+@keyframes blink3 {
+	to {
+/*	background-color: @critical; */
 		color: @critical;
 	}
 }
@@ -106,7 +127,7 @@ window#waybar {
 #battery.critical:not(.charging) {
   color: @fgcolor;
   background-color: @bgcolor;
-  	animation-name: blink2;
+  	animation-name: blink3;
   	animation-duration: 0.3s;
   	animation-timing-function: linear;
   	animation-iteration-count: infinite;
