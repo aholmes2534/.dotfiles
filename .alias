@@ -15,7 +15,7 @@ alias h='history'
 alias hg='history | grep'
 alias off='shutdown -P now'
 alias dmesg='dmesg -eHL'
-alias journal='journalctl -p 3 -b 3'
+alias journal='journalctl -p 3'
 alias grep='grep -sI --color=auto' #: Colorful (auto) 'grep' output
 alias rm='rm -v'
 alias mv='mv -v'
