@@ -19,10 +19,9 @@
   "tooltip": false,
   "full-at": 90,
   "format-plugged": " {capacity}%",
-  "format-charging": "{icon} {capacity}%",
+  "format-charging": " {capacity}%",
   "format": "{icon} {capacity}%",
   "format-icons": ["", "", "", "", ""],
-  "format-time": "{H}h:{M}m",
 },
 "clock": {
   "format": " {:%a %b %d %H:%M}",
@@ -39,7 +38,7 @@
 "network": {
 	"format-wifi": " {essid}",
   "format-ethernet": " {ipaddr}",
-  "format-linked": " {ifname}",
+  "format-linked": " {ifname}",
   "format-disconnected": " Disconnected",
   "tooltip": false,
   "max-length": 20,
