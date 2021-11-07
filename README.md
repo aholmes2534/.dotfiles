@@ -1,5 +1,5 @@
 # .dotfiles
-Configuration files for Archlinux, bash, vim, sway,
+Config files for Archlinux, bash, vim, sway,
 waybar, swaylock, wofi and various other applications. 
 
 ## Archlinux
@@ -16,11 +16,12 @@ separate root, home, var, data and swap partitions.
 ## Themes and Fonts
 - Theme: Dracula like colors for Foot terminal.
 - Font: [JetBrainsMono](https://archlinux.org/packages/community/any/ttf-jetbrains-mono/)
--
+
 ## Screenshots
 To change the desktop theme define wallpaper image in sway/conf file then change 
 the background color in the waybar/color.css file
 to your desired matching color.
+
 ![sample desktop](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-11-05_21-57-44_219301240.png)
 <br/>
 ![sample desktop](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-10-27_06-43-42_519959447.png)
