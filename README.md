@@ -9,6 +9,12 @@ The installation guide for my system will be here as well. This is a Thinkpad t4
 uefi, systemd-boot with full disk encryption. LVM for the partitioning with 
 separate root, home, var, data and swap partitions.
 
+## Programs Used
+- Window manager: [Sway](https://github.com/swaywm/sway)
+- - Bar: [Waybar](https://github.com/Alexays/Waybar)
+- - Application launcher: [Wofi](https://hg.sr.ht/~scoopta/wofi)
+- - Terminal emulator: [Foot](https://codeberg.org/dnkl/foot)
+
 ## Screenshots
 
 To change the desktop theme define wallpaper image in sway/conf file then change 
@@ -17,6 +23,9 @@ to your desired matching color.
 
 
 ![sample desktop](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-11-05_21-57-44_219301240.png)
+<br/>
 ![sample desktop](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-10-27_06-43-42_519959447.png)
+<br/>
 ![sample desktop](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-10-27_06-40-20_483919216.png)
+<br/r>
 ![sample desktop](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-10-27_06-50-50_028078689.png)
