@@ -15,7 +15,7 @@ set $menu wofi
 set $browser MOZ_ENABLE_WAYLAND=1 firefox
 set $bar waybar
 set $opacity 0.85
-set $background ~/Pictures/CurrentBG/northern_lights_HD.png
+set $background ~/Pictures/CurrentBG/castle_in_the_sky_HD.png
 
 output eDP-1 bg $background fill dpms on
 
