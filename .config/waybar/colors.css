@@ -2,7 +2,6 @@
 
 @define-color bgcolor #1a95dc;	/* light blue */
 @define-color fgcolor #000000;	/* black */
-@define-color hover #735454; 		/* dark grey */
 @define-color charging #7891ff;	/* green */
 @define-color critical #ff0000;	/* red */
 @define-color warning #fa8f0c;  /* orange */
