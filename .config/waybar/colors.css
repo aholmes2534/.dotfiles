@@ -1,7 +1,8 @@
 /* waybar color.css imported into style.css */
 
-@define-color bgcolor #1a95dc;	/* light blue */
-@define-color fgcolor #000000;	/* black */
-@define-color charging #7891ff;	/* green */
-@define-color critical #ff0000;	/* red */
-@define-color warning #fa8f0c;  /* orange */
+@define-color bgcolor #1a95dc;	/* background color */
+@define-color fgcolor #000000;	/* foreground color */
+@define-color charging #7891ff;	/* battery charging color */
+@define-color critical #ff0000;	/* critical color */
+@define-color warning #fa8f0c;	/* warning color */
+@define-color hover #94a6e3;		/* mouse hover over workspace color */
