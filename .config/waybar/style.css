@@ -18,6 +18,13 @@ window#waybar {
 	background: @bgcolor;
 }
 
+#workspaces button:hover {
+	background: @hover;
+	transition: none;
+	box-shadow: inherit;
+	text-shadow: inherit;
+}
+
 #custom-cap-left, #custom-cap-right {
 	color: @bgcolor;
 	font-size: 25px;
