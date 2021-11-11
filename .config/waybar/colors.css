@@ -2,7 +2,7 @@
 
 @define-color bgcolor #1a95dc;	/* background color */
 @define-color fgcolor #000000;	/* foreground color */
-@define-color charging #7891ff;	/* battery charging color */
+@define-color charging #ffffff;	/* battery charging color */
 @define-color critical #ff0000;	/* critical color */
-@define-color warning #fa8f0c;	/* warning color */
+@define-color warning #f3f809;	/* warning color */
 @define-color hover #94a6e3;		/* mouse hover over workspace color */

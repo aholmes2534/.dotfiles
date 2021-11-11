@@ -72,7 +72,7 @@ window#waybar {
   background-color: @bgcolor;
 		animation-name: blink1;                                                          
 		animation-duration: 1.0s;                                                       
-		animation-timing-function: linear;                                              
+		animation-timing-function: ease-in-out;                                              
 		animation-iteration-count: infinite;                                            
 		animation-direction: alternate;
 }
@@ -87,7 +87,7 @@ window#waybar {
   background-color: @bgcolor;
   	animation-name: blink2;
   	animation-duration: 1.0s;
-  	animation-timing-function: ease;
+  	animation-timing-function: ease-in-out;
   	animation-iteration-count: infinite;
   	animation-direction: alternate;
 }
@@ -102,7 +102,7 @@ window#waybar {
   background-color: @bgcolor;
   	animation-name: blink3;
   	animation-duration: 0.4s;
-  	animation-timing-function: linear;
+  	animation-timing-function: ease-in-out;
   	animation-iteration-count: infinite;
   	animation-direction: alternate;
 }
