@@ -1,5 +1,5 @@
 // waybar config
-// 061121
+// 111121
 
 {
 "layer": "top",
@@ -68,7 +68,7 @@
   },
 },
 "cpu": {
-  "interval": 3,
+  "interval": 4,
   "min-length": 6,
 	"format": " {usage}%",
   "tooltip": false,
