@@ -30,6 +30,7 @@ window#waybar {
 	font-size: 25px;
 }
 
+#custom-weather,
 #idle_inhibitor,
 #cpu, 
 #temperature, 
