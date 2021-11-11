@@ -61,10 +61,6 @@ window#waybar {
 		color: @critical;                                                    
 }
 
-#battery.critical {
-		color: @critical;
-}
-
 @keyframes blink1 {                                                                
 	to {
 		color: @charging;
@@ -104,7 +100,7 @@ window#waybar {
 #battery.critical:not(.charging) {
   background-color: @bgcolor;
   	animation-name: blink3;
-  	animation-duration: 0.3s;
+  	animation-duration: 0.4s;
   	animation-timing-function: linear;
   	animation-iteration-count: infinite;
   	animation-direction: alternate;
