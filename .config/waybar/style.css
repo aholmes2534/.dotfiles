@@ -27,7 +27,6 @@ window#waybar {
 
 #custom-cap-left, #custom-cap-right {
 	color: @bgcolor;
-	font-size: 25px;
 }
 
 #custom-weather,
