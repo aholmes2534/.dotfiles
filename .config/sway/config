@@ -1,9 +1,8 @@
-#------------------------------------------------------------------------------
+#-----> ~/.config/sway/config 
 #
-#-----------> ~/.config/sway/config 
-#-----------> date 071121
+#---------------> date 141121
 #
-#-------------------- Variables
+#---------------> Variables
 
 set $mod Mod4
 set $left h
@@ -13,8 +12,7 @@ set $right l
 set $term foot
 set $menu wofi
 set $browser MOZ_ENABLE_WAYLAND=1 firefox
-set $opacity 0.85
-set $background ~/Pictures/CurrentBG/castle_in_the_sky_HD.png
+set $background ~/Pictures/CurrentBG/HxeeoD3.jpg
 
 output eDP-1 bg $background fill dpms on
 
@@ -25,12 +23,12 @@ for_window [title="(?:Open | Save) (?:File|Folder|As)"] floating enable
 for_window [app_id="mpv"] floating enable
 for_window [app_id="imv"] floating enable
 
-#-------------------- Start programs
+#---------------> Start programs
 
 exec wl-paste -t text --watch clipman store
 exec mako
 
-#-------------------- lock screen
+#---------------> lock screen
 
 set $lock swaylock 
 
@@ -38,7 +36,7 @@ exec swayidle -w timeout 600 '$lock' timeout 900 'swaymsg "output eDP-1 dpms off
 
 bindsym $mod+g exec $lock
 
-#-------------------- Input configuration
+#---------------> Input configuration
 
 input "type:keyboard" {
 	xkb_options caps:swapescape
@@ -50,18 +48,18 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
 	natural_scroll disable
 }
 
-#-------------------- Mouse modes
+#---------------> Mouse modes
 
 focus_follows_mouse yes
 
-#-------------------- Output configuration
+#---------------> Output configuration
 
 
 default_border pixel 3
 default_floating_border pixel 3
 smart_borders no_gaps
 
-#-------------------- Key bindings
+#---------------> Key bindings
 
 bindsym $mod+Shift+b exec $browser
 bindsym $mod+Return exec $term
@@ -74,66 +72,66 @@ bindsym $mod+Shift+e exit
 # take screenshot, pick color and save to clipborad
 bindsym $mod+Shift+p exec grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4 | wl-copy
 
-#-------------------- Split container
+#---------------> Split container
 
 bindsym $mod+b splith
 bindsym $mod+v splitv
 
-#-------------------- Switch container style
+#---------------> Switch container style
 
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-#-------------------- Hide the waybar
+#---------------> Hide the waybar
 
 bindsym $mod+x exec killall -SIGUSR1 waybar
 
-#-------------------- Toggle fullscreen
+#---------------> Toggle fullscreen
 
 bindsym $mod+f fullscreen
 
-#-------------------- Toggle tiling/floating
+#---------------> Toggle tiling/floating
 
 bindsym $mod+Shift+space floating toggle
 
-#-------------------- Toggle focus tiling/floating
+#---------------> Toggle focus tiling/floating
 
 bindsym $mod+space focus mode_toggle
 
-#-------------------- Focus parent
+#---------------> Focus parent
 
 bindsym $mod+a focus parent
 
-#-------------------- Change focus with direction keys
+#---------------> Change focus with direction keys
 
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
 bindsym $mod+$up focus up
 bindsym $mod+$right focus right
 
-#-------------------- Change focus with arrow keys
+#---------------> Change focus with arrow keys
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-#-------------------- Move focused window with direction keys
+#---------------> Move focused window with direction keys
 
 bindsym $mod+Shift+$left move left
 bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$right move right
 
-#-------------------- Move focused window with arrow keys
+#---------------> Move focused window with arrow keys
 
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-#-------------------- Switch to workspace
+#---------------> Switch to workspace
 
 bindsym $mod+1 workspace number 1
 bindsym $mod+2 workspace number 2
@@ -142,7 +140,7 @@ bindsym $mod+4 workspace number 4
 bindsym $mod+5 workspace number 5
 bindsym $mod+6 workspace number 6
 
-#-------------------- Move focused container to workspace
+#---------------> Move focused container to workspace
 
 bindsym $mod+Shift+1 move container to workspace number 1, workspace 1 
 bindsym $mod+Shift+2 move container to workspace number 2, workspace 2
@@ -151,15 +149,15 @@ bindsym $mod+Shift+4 move container to workspace number 4, workspace 4
 bindsym $mod+Shift+5 move container to workspace number 5, workspace 5
 bindsym $mod+Shift+6 move container to workspace number 6, workspace 6
 
-#-------------------- Move to scratchpad
+#---------------> Move to scratchpad
 
 bindsym $mod+Shift+minus move scratchpad
 
-#-------------------- Fetch from scratchpad
+#---------------> Fetch from scratchpad
 
 bindsym $mod+minus scratchpad show
 
-#-------------------- Resizing containers
+#---------------> Resizing containers
 
 mode "resize" {
 # left will shrink the containers width
@@ -182,11 +180,11 @@ bindsym Escape mode "default"
 
 bindsym $mod+r mode "resize"
 
-#-------------------- Floats
+#---------------> Floats
 
 # for_window [class="feh"] floating enable
 
-#-------------------- Volume and Brightness
+#---------------> Volume and Brightness
 
 bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
 bindsym XF86AudioLowerVolume exec amixer set Master 5%-
@@ -195,9 +193,9 @@ bindsym XF86AudioMicMute exec amixer set Capture toggle
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 
-#-------------------- Status Bar
+#---------------> Status Bar
 exec waybar
 #
 include /etc/sway/config.d/*
 
-#-------------------- EOF
+#---------------> EOF
