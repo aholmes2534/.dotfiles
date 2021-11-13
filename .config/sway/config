@@ -13,7 +13,6 @@ set $right l
 set $term foot
 set $menu wofi
 set $browser MOZ_ENABLE_WAYLAND=1 firefox
-set $bar waybar
 set $opacity 0.85
 set $background ~/Pictures/CurrentBG/castle_in_the_sky_HD.png
 
@@ -197,10 +196,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 
 #-------------------- Status Bar
-
-bar {
-		swaybar_command $bar
-} 
+exec waybar
 #
 include /etc/sway/config.d/*
 
