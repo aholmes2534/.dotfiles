@@ -13,7 +13,7 @@ set $term foot
 set $menu wofi
 set $browser MOZ_ENABLE_WAYLAND=1 firefox
 
-output eDP-1 bg ~/Pictures/CurrentBG/HxeeoD3.jpg fill
+output eDP-1 bg ~/Pictures/Backgrounds/l9Vp7IC.jpg fill
 
 for_window [app_id="firefox" title="Picture-in-Picture"] floating enable; resize set width 500 px height 280 px; move position 1416 px 758 px; sticky on; border 1 px
 for_window [app_id="gcolor3"] floating enable
@@ -67,6 +67,7 @@ bindsym $mod+F1 exec grim
 bindsym $mod+Shift+q kill
 floating_modifier $mod normal
 bindsym $mod+Shift+c reload
+bindsym $mod+Shift+w exec killall -SIGUSR2 waybar
 bindsym $mod+Shift+e exit 
 # take screenshot, pick color and save to clipborad
 bindsym $mod+Shift+p exec grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4 | wl-copy
