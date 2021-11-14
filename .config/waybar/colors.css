@@ -1,6 +1,6 @@
 /* waybar color.css imported into style.css */
 
-@define-color bgcolor #1a95dc;	/* background color */
+@define-color bgcolor #729fcf;	/* #1a95dc old color*/
 @define-color fgcolor #000000;	/* foreground color */
 @define-color charging #ffffff;	/* battery charging color */
 @define-color critical #ff0000;	/* critical color */
