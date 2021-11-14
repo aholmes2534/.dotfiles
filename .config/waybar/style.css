@@ -30,8 +30,19 @@ window#waybar {
 	font-size: 24px;
 }
 
+#idle_inhibitor {
+	background: @bgcolor;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+#custom-offswitch {
+	background: @bgcolor;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
 #custom-weather,
-#idle_inhibitor,
 #cpu, 
 #temperature, 
 #memory, 
@@ -39,7 +50,6 @@ window#waybar {
 #disk,
 #battery, 
 #clock, 
-#custom-offswitch,
 #network {
 	background: @bgcolor;
 	padding-left: 10px;

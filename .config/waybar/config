@@ -36,7 +36,6 @@
 },
 "custom/offswitch": {
   "tooltip": false,
-  "min-length": 3,
   "format": "",
   "interval": "once",
   "on-click": "systemctl poweroff",
@@ -66,7 +65,6 @@
 },
 "idle_inhibitor": {
   "tooltip": false,
-  "min-length": 3,
 	"format": "{icon}",
 	"format-icons": {
 	"activated": "",
