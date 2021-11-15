@@ -15,20 +15,20 @@ separate root, home, var, data and swap partitions.
 
 ## Themes and Fonts
 - Theme: Dracula like colors for Foot terminal.
-- Font: [JetBrainsMono](https://archlinux.org/packages/community/any/ttf-jetbrains-mono/)
-- Font: [SourceCodePro](https://archlinux.org/packages/extra/any/adobe-source-code-pro-fonts/)
+- Waybar font: [JetBrainsMono](https://archlinux.org/packages/community/any/ttf-jetbrains-mono/)
+- Foot font: [SourceCodePro](https://archlinux.org/packages/extra/any/adobe-source-code-pro-fonts/)
 
 ## Screenshots
 To change the desktop theme define wallpaper image in sway/conf file then change 
 the background color in the waybar/color.css file
 to your desired matching color.
 
-### Waybar
+### Waybar samples
 ![sample waybar](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-11-16_06-17-00_213807813.png)
 <br/>
 ![sample waybar](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-11-15_22-25-02_641878534.png)
 <br/>
-### Desktop
+### Desktops
 ![sample desktop](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-11-15_08-23-25_264575588.png)
 <br/>
 ![sample desktop](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-11-05_21-57-44_219301240.png)
