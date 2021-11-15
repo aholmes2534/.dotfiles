@@ -41,7 +41,7 @@
   "on-click": "systemctl poweroff",
 },
 "network": {
-	"format-wifi": " {essid}",
+  "format-wifi": " {essid}",
   "format-ethernet": " {ipaddr}",
   "format-linked": " {ifname}",
   "format-disconnected": " Disconnected",
@@ -74,7 +74,7 @@
 "cpu": {
   "interval": 4,
   "min-length": 6,
-	"format": " {usage}%",
+  "format": " {usage}%",
   "tooltip": false,
   "states": {
   "critical": 90,
@@ -84,15 +84,15 @@
   "tooltip": false,
   "min-length": 6,
   "critical-threshold": 90,
-	"format": "{icon} {temperatureC}°C",
-	"format-critical": "{icon} {temperatureC}°C",
+  "format": "{icon} {temperatureC}°C",
+  "format-critical": "{icon} {temperatureC}°C",
   "format-icons": {
   "default": ["", "", "", "", ""],
   },
 },
 "memory": {
   "tooltip": false,
-	"format": " {percentage}%",
+  "format": " {percentage}%",
   "states": {
     "critical":90,
   },
@@ -105,7 +105,7 @@
   "min-length": 5,
   "format": " {percentage_used}%",
   "states": {
-  "critical": 90
+  "critical": 90,
   },
 },
 "sway/workspaces": {
