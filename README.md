@@ -23,7 +23,7 @@ To change the desktop theme define wallpaper image in sway/conf file then change
 the background color in the waybar/color.css file
 to your desired matching color.
 
-### Waybar samples
+### Waybars
 ![sample waybar](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-11-16_07-39-12_708754889.png)
 <br/>
 ![sample waybar](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-11-15_22-25-02_641878534.png)
