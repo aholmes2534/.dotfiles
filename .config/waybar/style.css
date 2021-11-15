@@ -5,7 +5,7 @@
 * {
 	border: none;
 	border-radius: 0;
-	font-family: "SourceCodePro";
+	font-family: JetBrainsMono;
 	font-size: large;
 	color: @fgcolor;
 }
