@@ -24,7 +24,7 @@ the background color in the waybar/color.css file
 to your desired matching color.
 
 ### Waybar samples
-![sample waybar](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-11-16_07-31-43_517364017.png)
+![sample waybar](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-11-16_07-39-12_708754889.png)
 <br/>
 ![sample waybar](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-11-15_22-25-02_641878534.png)
 <br/>
