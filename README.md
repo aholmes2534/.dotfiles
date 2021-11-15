@@ -16,6 +16,7 @@ separate root, home, var, data and swap partitions.
 ## Themes and Fonts
 - Theme: Dracula like colors for Foot terminal.
 - Font: [JetBrainsMono](https://archlinux.org/packages/community/any/ttf-jetbrains-mono/)
+- Font: [SourceCodePro](https://archlinux.org/packages/extra/any/adobe-source-code-pro-fonts/)
 
 ## Screenshots
 To change the desktop theme define wallpaper image in sway/conf file then change 
