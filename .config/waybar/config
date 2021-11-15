@@ -16,7 +16,7 @@
   "interval": 3600,
 },
 "battery": {
-  "min-length": 6,
+  "min-length": 5,
   "states": {
   "full": 95,
   "warning": 30,
@@ -24,10 +24,10 @@
   },
   "tooltip": false,
   "full-at": 90,
-  "format-plugged": " {capacity}%",
-  "format-charging": " {capacity}%",
+  "format-plugged": "{icon} {capacity}%",
+  "format-charging": "{icon} {capacity}%",
   "format": "{icon} {capacity}%",
-  "format-icons": ["", "", "", "", ""],
+  "format-icons": ["", "", "", "", "", "", "", "", "", ""],
 },
 "clock": {
   "format": " {:%a %b %d %H:%M}",
