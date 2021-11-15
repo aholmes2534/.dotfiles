@@ -74,20 +74,35 @@ window#waybar {
 
 @keyframes blink1 {                                                                
 	to {
+		color: @plugged;
+	}
+}
+
+#battery.plugged {
+background-color: @bgcolor;
+		animation-name: blink1;                                                          
+		animation-duration: 0.5s;                                                       
+		animation-timing-function: linear;                                              
+		animation-iteration-count: infinite;                                            
+		animation-direction: alternate;
+}
+
+@keyframes blink2 {
+	to {
 		color: @charging;
 	}
 }
 
 #battery.charging {
   background-color: @bgcolor;
-		animation-name: blink1;                                                          
-		animation-duration: 1.0s;                                                       
+		animation-name: blink2;                                                          
+		animation-duration: 1.5s;                                                       
 		animation-timing-function: ease-in-out;                                              
 		animation-iteration-count: infinite;                                            
 		animation-direction: alternate;
 }
 
-@keyframes blink2 {
+@keyframes blink3 {
 	to {
 		color: @warning;
 	}
@@ -95,14 +110,14 @@ window#waybar {
 
 #battery.warning:not(.charging) {
   background-color: @bgcolor;
-  	animation-name: blink2;
-  	animation-duration: 1.0s;
+  	animation-name: blink3;
+  	animation-duration: 0.5s;
   	animation-timing-function: ease-in-out;
   	animation-iteration-count: infinite;
   	animation-direction: alternate;
 }
 
-@keyframes blink3 {
+@keyframes blink4 {
 	to {
 		color: @critical;
 	}
@@ -110,8 +125,8 @@ window#waybar {
 
 #battery.critical:not(.charging) {
   background-color: @bgcolor;
-  	animation-name: blink3;
-  	animation-duration: 0.4s;
+  	animation-name: blink4;
+  	animation-duration: 0.2s;
   	animation-timing-function: ease-in-out;
   	animation-iteration-count: infinite;
   	animation-direction: alternate;
