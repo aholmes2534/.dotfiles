@@ -30,3 +30,5 @@ to your desired matching color.
 ![sample desktop](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-10-27_06-40-20_483919216.png)
 <br/>
 ![sample desktop](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-10-27_06-50-50_028078689.png)
+<br/>
+![sample waybar](https://github.com/tim3dman/.dotfiles/blob/main/Screenshots/screenshot_2021-11-15_22-25-02_641878534.png)
