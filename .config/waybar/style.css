@@ -18,7 +18,6 @@
 
 #waybar {
 	background: transparent;
-	border-radius: 0;
 	font-family: JetBrainsMono;
 	font-size: large;
 	color: @fgcolor;
