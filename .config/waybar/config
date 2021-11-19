@@ -16,6 +16,7 @@
   "interval": 3600,
 },
 "battery": {
+  "interval": 6,
   "min-length": 5,
   "states": {
   "full": 95,
