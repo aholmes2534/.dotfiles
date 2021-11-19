@@ -106,14 +106,14 @@ background-color: @bgcolor;
 
 @keyframes blink2 {
 	to {
-		color: @charging;
+		background-color: @charging;
 	}
 }
 
 #battery.charging {
-  background-color: @bgcolor;
+/*  background-color: @bgcolor; */
 		animation-name: blink2;                                                          
-		animation-duration: 1.5s;                                                       
+		animation-duration: 1.0s;                                                       
 		animation-timing-function: ease-in-out;                                              
 		animation-iteration-count: infinite;                                            
 		animation-direction: alternate;
@@ -121,12 +121,12 @@ background-color: @bgcolor;
 
 @keyframes blink3 {
 	to {
-		color: @warning;
+		background-color: @warning;
 	}
 }
 
 #battery.warning:not(.charging) {
-  background-color: @bgcolor;
+/*  background-color: @bgcolor; */
   	animation-name: blink3;
   	animation-duration: 0.5s;
   	animation-timing-function: ease-in-out;
@@ -136,14 +136,14 @@ background-color: @bgcolor;
 
 @keyframes blink4 {
 	to {
-		color: @critical;
+		background-color: @critical;
 	}
 }
 
 #battery.critical:not(.charging) {
-  background-color: @bgcolor;
+ /* background-color: @bgcolor; */
   	animation-name: blink4;
-  	animation-duration: 0.2s;
+  	animation-duration: 0.8s;
   	animation-timing-function: ease-in-out;
   	animation-iteration-count: infinite;
   	animation-direction: alternate;
