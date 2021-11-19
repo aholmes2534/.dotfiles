@@ -27,14 +27,17 @@
 #workspaces button {
 	padding-left: 10px;
 	padding-right: 10px;
+	color: @bgcolor;
 }
 
 #workspaces button.focused {
 	background: @bgcolor;
+	color: @fgcolor;
 }
 
 #workspaces button:hover {
 	background: @hover;
+	color: @fgcolor;
 	transition: none;
 	box-shadow: inherit;
 	text-shadow: inherit;
