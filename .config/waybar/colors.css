@@ -1,9 +1,0 @@
-/* waybar color.css imported into style.css */
-
-@define-color bgcolor #9ce2f5;	/* background color*/
-@define-color fgcolor #000000;	/* foreground color */
-@define-color charging #ffffff;	/* battery charging color */
-@define-color plugged #acfcad;	/* ac plugged color */
-@define-color critical #ff0000;	/* critical color */
-@define-color warning #f3f809;	/* warning color */
-@define-color hover #94a6e3;		/* mouse hover over workspace color */
