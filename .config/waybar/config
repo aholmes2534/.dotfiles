@@ -16,12 +16,12 @@
   "interval": 3600,
 },
 "battery": {
-  "interval": 6,
+  "interval": 15,
   "min-length": 5,
   "states": {
   "full": 95,
   "warning": 30,
-  "critical": 15,
+  "critical": 20,
   },
   "tooltip": false,
   "full-at": 90,
