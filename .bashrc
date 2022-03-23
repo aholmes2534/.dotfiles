@@ -19,6 +19,7 @@ HISTIGNORE='q:ls:c:cd:cl:h:alias'
 
 # shell options
 set -o noclobber
+shopt -s autocd
 
 # set PATH so that it includes users private bin/
 PATH="${PATH:+${PATH}:}$HOME/bin"
