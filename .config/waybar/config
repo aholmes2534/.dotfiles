@@ -16,15 +16,14 @@
   "interval": 3600,
 },
 "battery": {
-  "interval": 15,
   "min-length": 5,
   "states": {
-  "full": 95,
+  "full": 90,
   "warning": 30,
-  "critical": 20,
+  "critical": 15,
   },
   "tooltip": false,
-  "full-at": 90,
+  "full-at": 95,
   "format-plugged": "{icon} {capacity}%",
   "format-charging": "{icon} {capacity}%",
   "format": "{icon} {capacity}%",
