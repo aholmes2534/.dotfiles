@@ -1,4 +1,4 @@
-# my aliases
+# my aliases 24032022
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
