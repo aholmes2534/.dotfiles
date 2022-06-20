@@ -1,6 +1,6 @@
 #-----> ~/.config/sway/config 
 #
-#---------------> date 141121
+#---------------> date 21062022
 #
 #---------------> Variables
 
@@ -11,9 +11,9 @@ set $up k
 set $right l
 set $term foot
 set $menu wofi
-set $browser MOZ_ENABLE_WAYLAND=1 firefox
+set $browser MOZ_ENABLE_WAYLAND=1 chromium
 
-output eDP-1 bg ~/Pictures/CurrentBG/northern_lights_HD.png fill
+output eDP-1 bg ~/Pictures/Backgrounds/tsunami.png fill
 
 for_window [app_id="firefox" title="Picture-in-Picture"] floating enable; resize set width 500 px height 280 px; move position 1416 px 758 px; sticky on; border 1 px
 for_window [app_id="gcolor3"] floating enable
