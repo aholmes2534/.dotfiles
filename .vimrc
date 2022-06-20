@@ -86,7 +86,7 @@ autocmd vimenter * ++nested colorscheme gruvbox
 "let g:floaterm_keymap_toggle = '<F12>' " Use F12 to toggle floating terminal
 let g:arduino_use_cli = 1 " this will always use arduino-cli
 
-" Disable arrows key in vim
+" Disable arrow keys in vim
 for key in ['<Up>', '<Down>', '<Left>', '<Right>']
   exec 'noremap' key '<Nop>'
   exec 'inoremap' key '<Nop>'
