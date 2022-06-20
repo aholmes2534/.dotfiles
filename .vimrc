@@ -1,4 +1,4 @@
-"  ~/.vimrc 241021
+"  ~/.vimrc 21062022
 "
 "  to pause Vim and drop to terminal ^C + Z, then fg to return to Vim
 
@@ -48,7 +48,6 @@ nmap <leader>f :Files<cr>
 call plug#begin('~/.vim/autoload/plugged')
 
 " Declare the list of plugins
-
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'sheerun/vim-polyglot' " Better Syntax Support
@@ -76,7 +75,6 @@ Plug 'dracula/vim' " Dracula colorscheme
 
 Plug 'stevearc/vim-arduino' " Arduino and vim
 
-
 " List ends here. Plugins become visible to Vim after this call
 call plug#end()
 
@@ -86,5 +84,11 @@ autocmd vimenter * ++nested colorscheme gruvbox
 "colorscheme dracula
 
 "let g:floaterm_keymap_toggle = '<F12>' " Use F12 to toggle floating terminal
-
 let g:arduino_use_cli = 1 " this will always use arduino-cli
+
+" Disable arrows key in vim
+for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+  exec 'noremap' key '<Nop>'
+  exec 'inoremap' key '<Nop>'
+  exec 'cnoremap' key '<Nop>'
+endfor
