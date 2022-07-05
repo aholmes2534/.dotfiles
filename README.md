@@ -1,5 +1,5 @@
 # .dotfiles
-Config files for Archlinux, bash, vim, sway,
+Config files for Archlinux, bash, nvim, sway,
 waybar, swaylock, wofi and various other applications. 
 
 ## Archlinux
