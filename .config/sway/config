@@ -1,19 +1,21 @@
 #-----> ~/.config/sway/config 
 #
-#---------------> date 21062022
+#-----> date 21062022
 #
-#---------------> Variables
+#-----> Variables
 
-set $mod Mod4
-set $left h
-set $down j
-set $up k
-set $right l
-set $term foot
-set $menu wofi
-set $browser chromium
+set {
+		$mod Mod4
+		$left h
+		$down j
+		$up k
+		$right l
+		$term foot
+		$menu wofi
+		$browser chromium
+}
 
-output eDP-1 bg ~/Pictures/Backgrounds/tsunami.png fill
+output eDP-1 bg ~/.wallpaper fill
 
 for_window [app_id="firefox" title="Picture-in-Picture"] floating enable; resize set width 500 px height 280 px; move position 1416 px 758 px; sticky on; border 1 px
 for_window [app_id="gcolor3"] floating enable
@@ -24,6 +26,7 @@ for_window [app_id="imv"] floating enable
 
 #---------------> Start programs
 
+exec foot -Ss &
 exec wl-paste -t text --watch clipman store
 exec mako
 
