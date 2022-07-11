@@ -1,7 +1,7 @@
 "----> nvim init.vim 10072022
 "
 
-colorscheme ron
+colorscheme slate
 syntax on
 set mouse=a
 set cursorline
