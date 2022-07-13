@@ -1,7 +1,7 @@
 require'lualine'.setup {
   options = {
     icons_enabled = true,
-    theme = 'material-nvim',
+    theme = 'auto',
   },
   sections = {
     lualine_a = {'mode'},

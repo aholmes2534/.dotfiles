@@ -32,7 +32,6 @@ require('general')
 require('bindings')
 require('commands')
 require('runner')
---require('plug_config.dashboard')
 
 -- CpHelper config
 vim.g.cphdir = os.getenv( 'HOME' )..'/problems'

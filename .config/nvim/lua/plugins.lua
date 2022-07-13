@@ -3,7 +3,6 @@ return require('packer').startup(function(use)
 
     -- apperative plugins
     use 'hrsh7th/vim-vsnip'
---    use 'glepnir/dashboard-nvim'
     use 'marko-cerovac/material.nvim'
     use 'andweeb/presence.nvim'
   

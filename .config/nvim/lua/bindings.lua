@@ -63,7 +63,7 @@ keymap('n', '+', '<cmd> resize +1 <cr>')
 keymap('n', '-', '<cmd> resize -1 <cr>')
 
 -- LSP bindings
-keymap('n', 'gD', '<cmd> lua vim.lsp.buf.declaration() <cr>')
+
 keymap('n', 'gd', '<cmd> lua vim.lsp.buf.definition() <cr>')
 keymap('n', 'K', '<cmd> lua vim.lsp.buf.hover() <cr>')
 keymap('n', 'gi', '<cmd> lua vim.lsp.buf.implementation() <cr>')
