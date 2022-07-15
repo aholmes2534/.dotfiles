@@ -13,7 +13,7 @@ source /usr/share/fzf/completion.bash && source /usr/share/fzf/key-bindings.bash
 
 
 # History options
-HISTFILESIZE=100000
+HISTFILESIZE=10000
 HISTSIZE=5000
 HISTCONTROL=ignoreboth:erasedups
 HISTIGNORE='q:ls:c:cd:cl:h:alias'
