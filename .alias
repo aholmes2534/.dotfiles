@@ -26,7 +26,6 @@ alias chmod='chmod -v'
 alias rmdir='rmdir -v'
 alias bashrc='nvim ~/.bashrc' # .bashrc shell config file
 alias aliases='nvim ~/.alias' # .alias file for .bashrc
-#alias vimrc='nvim ~/.config/nvim/init.vim' # nvim config file
 alias swayconf='nvim .config/sway/config' # sway config file
 alias tmuxrc='nvim ~/.tmux.conf' # tmux config file
 alias packages="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
