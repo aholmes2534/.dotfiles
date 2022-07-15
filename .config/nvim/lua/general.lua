@@ -22,7 +22,6 @@ vim.opt['swapfile'] = false
 vim.opt['laststatus'] = 3
 
 -- Persistent undo
--- mkdir $HOME/.vim/undo
 vim.opt['undofile'] = true
 vim.opt['undodir'] = os.getenv( 'HOME' )..'/.cache/nvim/undo'
 vim.opt['undolevels'] = 1000

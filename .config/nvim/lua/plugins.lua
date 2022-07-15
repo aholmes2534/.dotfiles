@@ -4,7 +4,6 @@ return require('packer').startup(function(use)
     -- apperative plugins
     use 'hrsh7th/vim-vsnip'
     use 'marko-cerovac/material.nvim'
-    use 'andweeb/presence.nvim'
   
     -- functional plugins
     use 'neovim/nvim-lspconfig'

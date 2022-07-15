@@ -14,7 +14,6 @@ require('plug_config.treesitter')
 require('plug_config.autopairs')
 require('plug_config.colour')
 require('plug_config.toggleTerm')
-require('plug_config.presence')
 require('plug_config.lualine')
 require('plug_config.colorizer')
 require('plug_config.toggle_lsp_diagnostics')
@@ -28,10 +27,13 @@ require('plug_config.gitsigns')
 require('plug_config.autosave')
 require('plug_config.nvim-tree')
 require('plug_config.telescope')
+
+
 require('general')
 require('bindings')
 require('commands')
 require('runner')
+
 
 -- CpHelper config
 vim.g.cphdir = os.getenv( 'HOME' )..'/problems'
@@ -39,3 +41,5 @@ vim.g.cphdir = os.getenv( 'HOME' )..'/problems'
 -- Rooter config
 vim.g.rooter_pattern = { 'input1', 'output1' }
 
+-- Enable logging
+--vim.lsp.set_log_level("debug")
