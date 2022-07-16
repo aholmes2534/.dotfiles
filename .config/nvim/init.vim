@@ -1,7 +1,6 @@
 "----> nvim init.vim 10072022
 "
 " --- General 
-
 set tabstop=4 
 set softtabstop=4
 set shiftwidth=4
@@ -29,7 +28,7 @@ set encoding=UTF-8
 set mouse=a
 set background=dark
 
-colorscheme tokyonight
+colorscheme ron
 
 " use y and p with the system clipboard
 set clipboard=unnamedplus
