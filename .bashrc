@@ -6,10 +6,11 @@
 [[ $- != *i* ]] && return
 
 # source aliases from .alias
-test -s ~/.alias && . ~/.alias || true
+source ~/.alias
 
 # source fzf keybindings
-source /usr/share/fzf/completion.bash && source /usr/share/fzf/key-bindings.bash
+source /usr/share/fzf/completion.bash
+source /usr/share/fzf/key-bindings.bash
 
 
 # History options
