@@ -35,4 +35,3 @@ export XDG_CURRENT_DESKTOP=sway
 # Force GTK to use wayland
 GDK_BACKEND=wayland
 CLUTTER_BACKEND=wayland
-
