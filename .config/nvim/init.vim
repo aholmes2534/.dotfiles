@@ -9,7 +9,7 @@ set expandtab
 set smartindent
 set number
 set numberwidth=1
-set relativenumber
+"set relativenumber
 set signcolumn=yes
 set noswapfile
 set nobackup
