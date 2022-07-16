@@ -12,7 +12,6 @@ source ~/.alias
 source /usr/share/fzf/completion.bash
 source /usr/share/fzf/key-bindings.bash
 
-
 # History options
 HISTFILESIZE=10000
 HISTSIZE=5000
@@ -36,3 +35,4 @@ export XDG_CURRENT_DESKTOP=sway
 # Force GTK to use wayland
 GDK_BACKEND=wayland
 CLUTTER_BACKEND=wayland
+
