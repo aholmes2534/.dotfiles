@@ -28,7 +28,7 @@ set encoding=UTF-8
 set mouse=a
 set background=dark
 
-colorscheme ron
+colorscheme tender
 
 " use y and p with the system clipboard
 set clipboard=unnamedplus

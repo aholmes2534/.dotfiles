@@ -1,4 +1,5 @@
 # my aliases 05072022
+#
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -16,7 +17,7 @@ alias hg='history | grep'
 alias off='shutdown -P now'
 alias dmesg='dmesg -eHL'
 alias journal='journalctl -p 3'
-alias grep='grep -sI --color=auto' #: Colorful (auto) 'grep' output
+alias grep='grep -sI --color=auto' # Colorful (auto) 'grep' output
 alias rm='rm -v'
 alias mv='mv -v'
 alias mkdir='mkdir -v'
@@ -25,6 +26,7 @@ alias chown='chown -v'
 alias chmod='chmod -v'
 alias rmdir='rmdir -v'
 alias bashrc='nvim ~/.bashrc' # .bashrc shell config file
+alias nvimrc='nvim ~/.config/nvim/init.vim' # init.vim for neovim
 alias aliases='nvim ~/.alias' # .alias file for .bashrc
 alias swayconf='nvim .config/sway/config' # sway config file
 alias tmuxrc='nvim ~/.tmux.conf' # tmux config file
