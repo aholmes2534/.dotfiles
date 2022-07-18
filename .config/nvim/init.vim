@@ -1,5 +1,5 @@
-""""" neovim - init.vim
-
+" neovim - init.vim
+" date - 18072022
 " requires plug.vim from https://github.com/junegunn/vim-plug
 " must run :PlugInstall upon initial load
 
@@ -9,6 +9,7 @@ Plug 'ellisonleao/glow.nvim', {'branch': 'main'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'voldikss/vim-floaterm'
 Plug 'antoinemadec/FixCursorHold.nvim'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
@@ -18,9 +19,6 @@ Plug 'tpope/vim-commentary'
 Plug 'morhetz/gruvbox'
 Plug 'kamykn/spelunker.vim'
 Plug 'kamykn/popup-menu.nvim'
-" tabular and vim-markdown work in tangent
-"Plug 'godlygeek/tabular'
-"Plug 'plasticboy/vim-markdown'
 Plug 'sirver/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'ap/vim-css-color'
@@ -67,6 +65,7 @@ let g:grubox_italic=1
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 " split window for :UltiSnipsEdit
 let g:UltiSnipsEditSplit="vertical"
 
@@ -116,6 +115,7 @@ set ignorecase
 set smartcase
 set ruler
 set number
+
 " number of spaces for \t
 set tabstop=2
 set shiftwidth=2
@@ -125,7 +125,7 @@ set smartindent
 " backup
 set backup
 set writebackup
-set backupdir=~/.config/nvim/.backup,/tmp/.nvimbackup
+set backupdir=~/.config/nvim/.backup
 set backupcopy=auto
 :au BufWritePre * let &bex = '-' .. strftime("%Y%b%d%X") .. '~'
 
@@ -168,7 +168,6 @@ nnoremap <C-p> "+gp
 nnoremap <leader>s :%s/
 
 " terminal
-tnoremap <Esc> <C-\><C-n>
 
 " tabs
 map <leader>t :tabnew<CR>
@@ -178,8 +177,3 @@ map <leader>= :tabnext<CR>
 
 " reload conf file
 map <leader>r :source $MYVIMRC<CR>
-
-
-
-" 
-
