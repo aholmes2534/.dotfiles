@@ -14,7 +14,6 @@ Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-commentary'
 Plug 'morhetz/gruvbox'
 Plug 'kamykn/spelunker.vim'
@@ -35,15 +34,6 @@ let g:airline_powerline_fonts=1
 
 "" airline theme
 let g:airline_theme='distinguished'
-
-"" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 "" spelunker
 let g:enable_spelunker_vim = 1
