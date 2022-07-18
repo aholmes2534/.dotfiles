@@ -10,6 +10,7 @@ separate root, home, var, data and swap partitions.
 ## Programs Used
 - Window manager: [Sway](https://github.com/swaywm/sway)
 - Bar: [Waybar](https://github.com/Alexays/Waybar)
+- Editor: [AstroNvim](https://github.com/AstroNvim/AstroNvim) 
 - Application launcher: [Wofi](https://hg.sr.ht/~scoopta/wofi)
 - Terminal emulator: [Foot](https://codeberg.org/dnkl/foot)
 
