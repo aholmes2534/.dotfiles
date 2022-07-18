@@ -1,4 +1,4 @@
-#! 
+#!/bin/bash 
 
 # ~/.bashrc 21062022
 
@@ -33,10 +33,6 @@ export QT_QPA_PLATFORM=wayland
 export MOZ_USE_XINPUT2=1
 export XDG_CURRENT_DESKTOP=sway
 
-# Force GTK to use wayland
-#GDK_BACKEND=wayland
-#CLUTTER_BACKEND=wayland
-
 # aliases
 alias ....='cd ../../..'
 alias la='ls -A'
@@ -62,7 +58,7 @@ alias chown='chown -v'
 alias chmod='chmod -v'
 alias rmdir='rmdir -v'
 alias bashrc='nvim ~/.bashrc' # .bashrc shell config file
-alias nvimrc='nvim ~/.config/nvim/init.vim' # init.vim for neovim
+alias vimrc='nvim ~/.config/nvim/init.vim' # init.vim for neovim
 alias swayconf='nvim .config/sway/config' # sway config file
 alias tmuxrc='nvim ~/.tmux.conf' # tmux config file
 alias packages="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
