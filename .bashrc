@@ -1,5 +1,3 @@
-#!/bin/bash 
-
 # ~/.bashrc 21062022
 
 # prompt set system wide in /etc/bash.bashrc
