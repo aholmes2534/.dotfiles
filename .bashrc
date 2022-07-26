@@ -1,15 +1,16 @@
-# ~/.bashrc 21062022
+#!/bin/bash
+
+# ~/.bashrc 27072022
 
 # prompt set system wide in /etc/bash.bashrc
+# PATH set in .bash_profile
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-
 # source fzf keybindings
-source /usr/share/fzf/completion.bash
-source /usr/share/fzf/key-bindings.bash
-
+# shellcheck source=/dev/null # ignore not following shellcheck error SC1091
+source /usr/share/fzf/completion.bash && source /usr/share/fzf/key-bindings.bash
 
 # History options
 HISTFILESIZE=10000
@@ -21,10 +22,7 @@ HISTIGNORE='q:ls:c:cd:cl:h:alias'
 set -o noclobber
 shopt -s autocd
 
-# set PATH so that it includes users private bin/
-PATH="${PATH:+${PATH}:}$HOME/bin"
-PATH="${PATH:+${PATH}:}$HOME/.local/bin"
-
+# wayland options
 export MOZ_ENABLE_WAYLAND=1
 export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_QPA_PLATFORM=wayland
@@ -56,7 +54,7 @@ alias chown='chown -v'
 alias chmod='chmod -v'
 alias rmdir='rmdir -v'
 alias bashrc='nvim ~/.bashrc' # .bashrc shell config file
-alias vimrc='nvim ~/.config/nvim/init.lua' # init.lua for neovim
+alias vimrc='nvim ~/.config/nvim/lua/user/init.lua' # user init.lua for neovim
 alias swayconf='nvim .config/sway/config' # sway config file
 alias tmuxrc='nvim ~/.tmux.conf' # tmux config file
 alias packages="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
