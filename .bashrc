@@ -1,5 +1,4 @@
-#!/bin/bash
-
+##
 # ~/.bashrc 27072022
 
 # prompt set system wide in /etc/bash.bashrc
@@ -54,7 +53,7 @@ alias chown='chown -v'
 alias chmod='chmod -v'
 alias rmdir='rmdir -v'
 alias bashrc='nvim ~/.bashrc' # .bashrc shell config file
-alias vimrc='nvim ~/.config/nvim/lua/user/init.lua' # user init.lua for neovim
+alias vimrc='nvim ~/.config/nvim/init.lua' # user init.lua for neovim
 alias swayconf='nvim .config/sway/config' # sway config file
 alias tmuxrc='nvim ~/.tmux.conf' # tmux config file
 alias packages="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
