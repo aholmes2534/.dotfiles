@@ -1,5 +1,5 @@
 " init.vim 03072022
-"
+
 set nu
 set rnu
 set splitbelow
@@ -11,27 +11,28 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set undofile
-set mouse=a
+set mouse=nv
 set scrolloff=4
 set clipboard=unnamedplus
 set nobackup
 
-filetype plugin on
-
 call plug#begin()
+Plug 'neoclide/coc.nvim' , {'branch': 'release'}
+Plug 'jiangmiao/auto-pairs'
+Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
+Plug 'preservim/nerdcommenter'
 Plug 'joshdick/onedark.vim'
 Plug 'norcalli/nvim-colorizer.lua'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-
 call plug#end()
 
 syntax on
 colorscheme onedark
 
 lua << END
+require'lspconfig'.pyright.setup{}
 require('lualine').setup({
   options = {
     icons_enabled = false,
