@@ -4,7 +4,14 @@ set nocompatible
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
 
-" TODO: Load plugins here (pathogen or vundle)
+" Plugins
+call plug#begin()
+
+Plug 'voldikss/vim-floaterm'
+
+call plug#end()
+
+let g:floaterm_keymap_toggle = '<F12>'
 
 " Turn on syntax highlighting
 syntax on
