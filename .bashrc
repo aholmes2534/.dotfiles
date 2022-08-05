@@ -1,4 +1,4 @@
-# ~/.bashrc 27072022
+# ~/.bashrc 06082022
 
 # prompt set system wide in /etc/bash.bashrc
 # PATH set in .bash_profile
