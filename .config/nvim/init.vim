@@ -23,7 +23,6 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
-Plug 'preservim/nerdcommenter'
 Plug 'joshdick/onedark.vim'
 Plug 'norcalli/nvim-colorizer.lua'
 call plug#end()
