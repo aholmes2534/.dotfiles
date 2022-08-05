@@ -12,7 +12,7 @@ set {
 		$right l
 		$term foot
 		$menu wofi
-		$browser chromium
+		$browser firefox
 }
 
 output eDP-1 bg ~/.wallpaper fill
