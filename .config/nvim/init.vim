@@ -1,4 +1,4 @@
-" init.vim 03072022
+" init.vim 06082022
 
 set nu
 set rnu
@@ -35,7 +35,6 @@ Plug 'rafamadriz/friendly-snippets'
 
 Plug 'VonHeikemen/lsp-zero.nvim'
 
-"Plug 'neoclide/coc.nvim' , {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lualine/lualine.nvim'
