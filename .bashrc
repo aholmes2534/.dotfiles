@@ -1,4 +1,3 @@
-##
 # ~/.bashrc 27072022
 
 # prompt set system wide in /etc/bash.bashrc
@@ -29,7 +28,7 @@ export MOZ_USE_XINPUT2=1
 export XDG_CURRENT_DESKTOP=sway
 
 # aliases
-alias ....='cd ../../..'
+alias ...='cd ../..'
 alias la='ls -A'
 alias ll='ls -l'
 alias ls='ls --color=auto'
@@ -52,10 +51,11 @@ alias cp='cp -v'
 alias chown='chown -v'
 alias chmod='chmod -v'
 alias rmdir='rmdir -v'
-alias bashrc='nvim ~/.bashrc' # .bashrc shell config file
-alias vimrc='nvim ~/.config/nvim/init.lua' # user init.lua for neovim
-alias swayconf='nvim .config/sway/config' # sway config file
-alias tmuxrc='nvim ~/.tmux.conf' # tmux config file
+alias bashrc='vim ~/.bashrc' # .bashrc shell config file
+alias nvimrc='vim ~/.config/nvim/init.vim' # user init.lua for neovim
+alias vimrc='vim ~/.vimrc' # .vimrc for vim
+alias swayconf='vim .config/sway/config' # sway config file
+alias tmuxrc='vim ~/.tmux.conf' # tmux config file
 alias packages="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 alias orphans='pacman -Rns $(pacman -Qtdq)'
 alias sudo='sudo '
@@ -68,4 +68,6 @@ alias syssth='systemctl suspend-then-hibernate'
 alias syshsl='systemctl hybrid-sleep'
 alias tb='nc termbin.com 9999' # file posting $ cat ~/some_file.txt | tb
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias vimdiff='nvim -d'
+alias vimdiff='vim -d'
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
