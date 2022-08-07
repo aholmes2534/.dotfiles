@@ -6,9 +6,11 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# append a session's history on shell exit
+shopt -s histappend
+export HISTFILESIZE=
+export HISTSIZE=
 # History options
-HISTFILESIZE=10000
-HISTSIZE=5000
 HISTCONTROL=ignoreboth:erasedups
 HISTIGNORE='q:ls:c:cd:cl:h:alias'
 
@@ -31,7 +33,6 @@ alias ls='ls --color=auto'
 alias c='clear'
 alias q='exit'
 alias pacu='pacman -Syu'
-alias yayu='yay -Sua'
 alias df='df -kh'
 alias cl='c;ls -lA'
 alias h='history'
