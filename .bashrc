@@ -6,10 +6,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# source fzf keybindings
-# shellcheck source=/dev/null # ignore not following shellcheck error SC1091
-source /usr/share/fzf/completion.bash && source /usr/share/fzf/key-bindings.bash
-
 # History options
 HISTFILESIZE=10000
 HISTSIZE=5000
@@ -69,5 +65,3 @@ alias syshsl='systemctl hybrid-sleep'
 alias tb='nc termbin.com 9999' # file posting $ cat ~/some_file.txt | tb
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias vimdiff='vim -d'
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
