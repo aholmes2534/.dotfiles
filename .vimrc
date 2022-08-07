@@ -1,3 +1,5 @@
+" .vimrc 08082022
+
 " Don't try to be vi compatible
 set nocompatible
 
@@ -8,6 +10,7 @@ filetype off
 call plug#begin()
 
 Plug 'voldikss/vim-floaterm'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
@@ -98,4 +101,4 @@ set t_Co=256
 set background=dark
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
-colorscheme iceberg
+colorscheme dracula
