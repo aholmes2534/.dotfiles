@@ -6,7 +6,7 @@
 "position": "top",
 "modules-left": ["idle_inhibitor", "cpu", "temperature", "memory", "battery", "disk", "pulseaudio", "custom/cap-left"],
 "modules-center": ["sway/workspaces"],
-"modules-right": ["custom/cap-right", "custom/weather", "network", "clock", "custom/offswitch"],
+"modules-right": ["custom/cap-right", "custom/weather", "custom/vpn", "network", "clock", "custom/offswitch"],
 "sway/window": {
 },
 "custom/weather": {
@@ -41,14 +41,22 @@
   "on-click": "systemctl poweroff",
 },
 "network": {
-	"interval": 10,
-  "format-wifi": " {essid}",
-  "format-ethernet": " {ipaddr}",
-  "format-linked": " {ifname}",
+  "interval": 2,
+  "format-wifi": " {ipaddr}",
+  "format-ethernet": " {ipaddr}",
+  "format-linked": " {ipaddr}",
   "format-disconnected": " Disconnected",
+  "format-disabled": "",
   "tooltip": false,
   "max-length": 20,
-  "min-length": 14,
+  "min-length": 6,
+},
+"custom/vpn": {
+    "format": " VPN",
+    "exec": "echo '{\"class\": \"connected\"}'",
+    "exec-if": "test -d /proc/sys/net/ipv4/conf/tun0",
+    "return-type": "json",
+    "interval": 2
 },
 "pulseaudio": {
   "tooltip": false,
@@ -81,7 +89,7 @@
 },
 "temperature": {
   "tooltip": false,
-  "min-length": 6,
+  "min-length": 5,
   "critical-threshold": 90,
   "format": "{icon} {temperatureC}°C",
   "format-critical": "{icon} {temperatureC}°C",
