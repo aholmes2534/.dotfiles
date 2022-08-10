@@ -32,7 +32,7 @@ Plug 'hrsh7th/cmp-nvim-lua'
 "  Snippets
 Plug 'L3MON4D3/LuaSnip'
 Plug 'rafamadriz/friendly-snippets'
-
+"  Etc
 Plug 'jiangmiao/auto-pairs'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'preservim/nerdtree'
@@ -54,6 +54,15 @@ require('lualine').setup({
     section_separators = '',
   },
 })
+require'lspconfig'.arduino_language_server.setup {
+  cmd = {
+    "arduino-language-server",
+    "-cli-config", "$HOME/.arduino15/arduino-cli.yaml",
+    "-fqbn", "arduino:avr:uno",
+    "-cli", "arduino-cli",
+    "-clangd", "clangd"
+  }
+}
 
 local lsp = require('lsp-zero')
 lsp.preset('recommended')
