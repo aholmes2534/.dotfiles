@@ -1,4 +1,4 @@
-" init.vim 06082022
+" init.vim 11082022
 
 set nu
 set rnu
