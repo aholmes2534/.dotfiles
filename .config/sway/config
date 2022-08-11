@@ -13,6 +13,8 @@ set {
 		$term foot
 		$menu wofi
 		$browser firefox
+    $text pluma
+    $file caja    
 }
 
 output eDP-1 bg ~/.wallpaper fill
@@ -29,6 +31,7 @@ for_window [app_id="imv"] floating enable
 exec foot -Ss &
 exec wl-paste -t text --watch clipman store
 exec mako
+exec nwg-wrapper -t bindings.pango -c bindings.css -p left -ml 150
 
 #---------------> lock screen
 
@@ -63,9 +66,11 @@ smart_borders no_gaps
 
 #---------------> Key bindings
 
-bindsym $mod+Shift+b exec $browser
 bindsym $mod+Return exec $term
+bindsym $mod+b exec $browser
 bindsym $mod+d exec $menu
+bindsym $mod+e exec $text
+bindsym $mod+f exec $file
 bindsym $mod+F1 exec grim
 bindsym $mod+Shift+q kill
 floating_modifier $mod normal
@@ -77,14 +82,14 @@ bindsym $mod+Shift+p exec grim -g "$(slurp -p)" -t ppm - | convert - -format '%[
 
 #---------------> Split container
 
-bindsym $mod+b splith
-bindsym $mod+v splitv
+bindsym Alt+b splith
+bindsym Alt+v splitv
 
 #---------------> Switch container style
 
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym Alt+s layout stacking
+bindsym Alt+w layout tabbed
+bindsym Alt+e layout toggle split
 
 #---------------> Hide the waybar
 
@@ -92,7 +97,7 @@ bindsym $mod+x exec killall -SIGUSR1 waybar
 
 #---------------> Toggle fullscreen
 
-bindsym $mod+f fullscreen
+bindsym Alt+f fullscreen
 
 #---------------> Toggle tiling/floating
 
@@ -154,11 +159,11 @@ bindsym $mod+Shift+6 move container to workspace number 6, workspace 6
 
 #---------------> Move to scratchpad
 
-bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+Shift+z move scratchpad
 
 #---------------> Fetch from scratchpad
 
-bindsym $mod+minus scratchpad show
+bindsym $mod+z scratchpad show
 
 #---------------> Resizing containers
 
