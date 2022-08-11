@@ -3,6 +3,8 @@
 # set PATH so that it includes users private bin/
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/builds/arduino-cli/bin"
 
 # source ~/.bashrc
 
@@ -11,6 +13,6 @@ export PATH="$PATH:$HOME/.local/bin"
 ## Autologin to sway
 
 if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
-	  exec sway
+  exec sway
 fi
 
