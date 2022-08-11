@@ -65,5 +65,5 @@ alias syshib='systemctl hibernate'
 alias syssth='systemctl suspend-then-hibernate'
 alias syshsl='systemctl hybrid-sleep'
 alias tb='nc termbin.com 9999' # file posting $ cat ~/some_file.txt | tb
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias vimdiff='vim -d'
