@@ -1,0 +1,27 @@
+<span face="monospace">
+<span size="xx-large" foreground="#7097f1" face="serif">Key Bindings</span>
+<span foreground="#eeeeee">
+Terminal emulator	<span foreground="#7097f1" face="serif">Mod+Enter</span>
+Web browser		<span foreground="#7097f1" face="serif">Mod+b</span>
+Text editor		<span foreground="#7097f1" face="serif">Mod+e</span>
+File manager		<span foreground="#7097f1" face="serif">Mod+f</span>
+Application launcher	<span foreground="#7097f1" face="serif">Mod+d</span>
+
+Kill task		<span foreground="#7097f1" face="serif">Mod+Shift+q</span>
+Lock sway		<span foreground="#7097f1" face="serif">Mod+g</span>
+Exit sway		<span foreground="#7097f1" face="serif">Mod+Shift+e</span>
+Reload sway		<span foreground="#7097f1" face="serif">Mod+Shift+c</span>
+
+Switch workspace	<span foreground="#7097f1" face="serif">Mod+number</span>
+Move to workspace	<span foreground="#7097f1" face="serif">Mod+Shift+number</span>
+Move focus		<span foreground="#7097f1" face="serif">Mod+arrow</span>
+Move container		<span foreground="#7097f1" face="serif">Mod+Shift+arrow</span>
+
+Toggle floating		<span foreground="#7097f1" face="serif">Mod+Shift+Space</span>
+Toggle layout		<span foreground="#7097f1" face="serif">Alt+Tab</span>
+Fullscreen		<span foreground="#7097f1" face="serif">Alt+f</span>
+
+Move to scratchpad	<span foreground="#7097f1" face="serif">Mod+Shift+z</span>
+Show scratchpad		<span foreground="#7097f1" face="serif">Mod+z</span>
+</span>
+</span>
