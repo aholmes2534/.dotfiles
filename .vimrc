@@ -27,7 +27,7 @@ let mapleader = ","
 
 " Security
 set modelines=0
-
+set undofile
 " Show line numbers
 set number
 
