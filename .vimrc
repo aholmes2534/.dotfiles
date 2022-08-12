@@ -1,4 +1,4 @@
-" .vimrc 08082022
+" .vimrc 13082022
 
 " Don't try to be vi compatible
 set nocompatible
@@ -77,10 +77,5 @@ set showmatch
 " noh - no highlight
 map <esc> :noh <CR>
 
-
 " Color scheme (terminal)
-set t_Co=256
-set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
 colorscheme dracula
