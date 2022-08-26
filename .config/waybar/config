@@ -23,7 +23,7 @@
   "critical": 15,
   },
   "tooltip": false,
-  "full-at": 95,
+  "full-at": 90,
   "format-plugged": "{icon} {capacity}%",
   "format-charging": "{icon} {capacity}%",
   "format": "{icon} {capacity}%",
