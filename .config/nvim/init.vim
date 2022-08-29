@@ -1,4 +1,4 @@
-" init.vim 11082022
+" init.vim 29082022
 
 set nu
 set rnu
@@ -38,12 +38,13 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'joshdick/onedark.vim'
+Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
 Plug 'Mofiqul/dracula.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 call plug#end()
 
 syntax on
-colorscheme dracula
+colorscheme embark
 
 lua <<EOF
 require('lualine').setup({
