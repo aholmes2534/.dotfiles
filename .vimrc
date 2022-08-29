@@ -1,4 +1,4 @@
-" .vimrc 13082022
+" .vimrc 29082022
 
 " Don't try to be vi compatible
 set nocompatible
@@ -11,6 +11,7 @@ call plug#begin()
 
 Plug 'voldikss/vim-floaterm'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
 
 call plug#end()
 
@@ -78,4 +79,5 @@ set showmatch
 map <esc> :noh <CR>
 
 " Color scheme (terminal)
-colorscheme dracula
+colorscheme embark
+
