@@ -17,7 +17,7 @@ set {
     $file caja    
 }
 
-output eDP-1 bg ~/.wallpaper fill
+output eDP-1 bg ~/.wallpaper fit
 
 for_window [app_id="firefox" title="Picture-in-Picture"] floating enable; resize set width 500 px height 280 px; move position 1416 px 758 px; sticky on; border 1 px
 for_window [app_id="gcolor3"] floating enable
